@@ -96,4 +96,4 @@ while pages:
     page += 1
 
 # #salva as informações em um arquivo csv
-rent_df.to_csv(r'.\rent.csv',index=False,encoding='UTF-8')
+rent_df.to_csv(r'.\rent_12_Jan.csv',index=False,encoding='UTF-8')

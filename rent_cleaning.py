@@ -1,6 +1,6 @@
 import pandas as pd
 
-rent_df = pd.read_csv('./rent.csv',encoding='UTF-8')
+rent_df = pd.read_csv(r".\rent_12_Jan.csv",encoding='UTF-8')
 
 #Função para separar as informações em um dicionário
 def get_infos(var: str):
@@ -280,4 +280,4 @@ rent_df = rent_df.drop(rent_df[rent_df['Condo'] > 3150].index)
 rent_df = rent_df.drop(rent_df[rent_df['IPTU'] > 1898.5].index)
 
 #Salva o arquivo csv
-rent_df.to_csv('rent_clean.csv', index=False, encoding="UTF-8")
+rent_df.to_csv(r".\rent_12_Jan_clean.csv", index=False, encoding="UTF-8")
